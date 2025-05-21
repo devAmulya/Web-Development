@@ -1,0 +1,98 @@
+
+* {
+    /* border: 1px solid red; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+ul {
+    list-style: none;
+    text-align: center;
+    padding: 30px;
+    margin: 20px;
+    background-color: rgba(46, 121, 77, 0.793);
+    color: white;
+}
+
+li {
+   display: inline; 
+   padding: 20px;
+}
+
+li:hover {
+    color: violet;
+    cursor: pointer;
+}
+
+.logo{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.Username{
+    float:right;
+    font-size: 20px;
+}
+
+.img2{
+    float: right;
+    max-width: 35%;
+    margin-left: 60px;
+}
+
+img {
+    max-width: 44%;
+}
+
+.fp{
+    margin-top: 65px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 120px;
+    padding-right: 40px;
+    font-size: 70px;
+}
+
+.sp{
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-right: 20px;
+    padding-left: 120px;
+    padding-right: 60px;
+    font-size: 20px;
+    
+}
+
+.bp{
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 20px;
+    padding-left: 120px;
+    padding-right: 60px;
+}
+
+.button {
+    border: none;
+    color: white;
+    background-color: aqua;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+  .button:hover {
+    background-color: #04AA6D;
+    color: white;
+  }

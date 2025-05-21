@@ -1,0 +1,41 @@
+/* style.css */
+body {
+    background-color: rgb(238, 178, 255);
+}
+
+.head {
+    color: darkblue;
+}
+
+#bglime {
+    background-color: lime;
+}
+
+.highlight {
+    color: red;
+    font-size: 26px;
+}
+
+p {
+    color: white;
+}
+
+
+#para {
+    color: green;
+}
+
+span{
+    color: black;
+    font-size: 20px;
+}
+
+ul li:first-child span {
+    background-color: yellow;
+    text-decoration: underline;
+}
+
+ul li:nth-of-type(2) span {
+    background-color: blue;
+    text-decoration: underline;
+}

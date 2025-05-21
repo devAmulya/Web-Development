@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    position:fixed;
+    font-size: 1vw; /* Set base font size relative to viewport width */
+}
+
+.image-container {
+    width: 50vw;
+    max-width: 80vw; /* Limit maximum width relative to viewport width */
+    margin: 10vh auto; /* Center vertically and horizontally */
+}
+
+img {
+    max-width: 100%; /* Ensure image fits within container */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    width: 100%; /* Ensure image fills the container */
+}
+
+button {
+    background: linear-gradient(135deg, #ad8610, #1e90ff);
+    color: white;
+    border: none;
+    padding: 2vh 19.7vw; /* Use viewport units */
+    font-size: 3vw; /* Use viewport units */
+    cursor: pointer;
+    display: block;
+    margin: 2vh auto; 
+    margin-top: 0vh;/* Center button horizontally */
+}
+
+button:hover {
+    background: linear-gradient(135deg, #690808, #00bfff);
+}

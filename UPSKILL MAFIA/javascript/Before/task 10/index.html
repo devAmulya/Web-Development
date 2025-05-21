@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content = "width=device-width,initial-scale=1.0" >
+    <title>
+        JAVASCRIPT
+    </title>
+    </head>
+    <body>
+        <p>Check console</p>
+        <script>
+            var principal = 31000; 
+            var rate = 0.05; 
+            var numberOfTimesCompounded = 12; 
+            var timeInYears = 3;
+            var amount = principal * Math.pow(1 + (rate / numberOfTimesCompounded), numberOfTimesCompounded * timeInYears);
+
+            console.log("The compound interest after " + timeInYears + " years is: " + (amount - principal).toFixed(0));
+        </script>
+    </body>
