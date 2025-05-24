@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Job Application</h2>
+    <form action="">
+        <label for="name">Name: </label><br>
+        <input type="text" id = "name"><br>
+        <label for="email">Email: </label><br>
+        <input type="email" id="email"><br>
+        <label for="phone">Phone: </label><br>
+        <input type="tel" id="phone"><br><br>
+        <label for="resume">Resume: </label><br>
+        <input type="file" id="resume"><br><br>
+        <label for="experience">Experience(years):</label><br>
+        <input type="number" name = "Counter" id="experience" min="0" max="50"><br>
+        <fieldset>
+            <legend>Skills</legend>
+            <input type="checkbox" id = "c1"><br>
+            <label for="c1">HTML</label><br>
+            <input type="checkbox" id = "c2"><br>
+            <label for="c2">CSS</label><br>
+            <input type="checkbox" id = "c3"><br>
+            <label for="c3">JavaScript</label><br>
+        </fieldset>
+        
+        <label for="high">Highest Education: </label><br>
+        <select name="highest" id="high">
+            <option value="High School">High School</option>
+            <option value="Senior Secondary">Senior Secondary</option>
+            <option value="Graduation">Graduation</option>
+        </select><br>
+        <fieldset>
+            <legend>Availability : </legend>
+            <input type="radio" id="full" name="r1">
+            <label for="full">Full time</label>
+            <input type="radio" id="part" name="r1">
+            <label for="part">Part Time</label>
+        </fieldset>
+        <br>
+        <label for="comm">Additonal Comments</label><br>
+        <textarea name="comm" id="comm" rows="4" cols="60"></textarea>
+        <input type="submit" name="submit" id="submit" value="Submit Application">
+
+
+    </form>
+</body>
+</html>
