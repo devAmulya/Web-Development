@@ -25,4 +25,6 @@ TOpic to research(2,3) - which style will be apllied upon multiple styling case
 8) !important - ignores every rule , this will be applied
 9) External css - create css file then link css file
 # for internal vs external, executed in order. So, Last Mentioned will be last executed, and will be shown
+10) Selectors: method to target html element and apply css. It uses: 
+# element, id, class, group{without externally defining a group}(directly mention element, id with #, class with ., group using , between group elemts)
  */
