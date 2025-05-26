@@ -7,13 +7,6 @@ p{
     background-color: red;
 }
 
-
-
-
-
-
-
-
 /* Todays Learning : 
 1) CSS - Cascading style sheet(provides styling in appearance)
 2) Four Factors dependencies:order : inline styles, IDs, (Classes and pseudo-classes) and (elements and pseudo-elements)
@@ -31,4 +24,5 @@ TOpic to research(2,3) - which style will be apllied upon multiple styling case
 7) kis element ko style krna hai - selector(e.g. h1)
 8) !important - ignores every rule , this will be applied
 9) External css - create css file then link css file
+# for internal vs external, executed in order. So, Last Mentioned will be last executed, and will be shown
  */
