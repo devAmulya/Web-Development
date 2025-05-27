@@ -1,0 +1,36 @@
+body{
+    background-color: grey;
+}
+
+.head{
+    color: darkblue;
+}
+
+#bglime{
+    background-color: lime;
+}
+
+p{
+    color: white;
+}
+
+#para{
+    color: green;
+}
+
+ul>li>span{
+    background-color: purple;
+    text-decoration: underline;
+}
+
+ul>li:first-of-type>span{
+    background-color: yellow;
+    text-decoration: underline;
+}
+
+ol>li:nth-of-type(2){
+    color:blue
+}
+ol>li:nth-of-type(3){
+    color:red
+}
