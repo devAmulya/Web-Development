@@ -14,13 +14,11 @@ p{
 2. Inheritance: Ye batata hai ki kisi element par agar koi property apply nahi hai to wo property uske parent element se inherit hogi.
 3. Cascade: Ye batata hai ki kisi property ke multiple values hain to kaunsa value priority mein apply hoga.
 4. Source Order: Ye batata hai ki agar kisi property ke multiple rules hain to kaunsa rule pehle aata hai aur uski value apply hogi.
-TOpic to research(2,3) - which style will be apllied upon multiple styling case
 4) Methods to add CSS - inline, internal, external
 5) Inline css using style attribute
 # create alot of confusion - not a good practise to use
 6) Internal CSS entered usinng style tag inside head
 # Use similar classes, id, tag, elements method to apply style in internal css as done in external css
-
 7) kis element ko style krna hai - selector(e.g. h1)
 8) !important - ignores every rule , this will be applied
 9) External css - create css file then link css file
