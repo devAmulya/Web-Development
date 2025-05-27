@@ -13,7 +13,7 @@ p{
 3) 1. Specificity: Ye batata hai ki multiple selectors ke beech me kaunsa selector jyada specific hai aur uski property apply hogi.
 2. Inheritance: Ye batata hai ki kisi element par agar koi property apply nahi hai to wo property uske parent element se inherit hogi.
 3. Cascade: Ye batata hai ki kisi property ke multiple values hain to kaunsa value priority mein apply hoga.
-4. Source Order: Ye batata hai ki agar kisi property ke multiple rules hain to kaunsa rule pehle aata hai aur uski value apply hogi.
+4. Source Order: Ye batata hai ki agar kisi property ke multiple rules hain to kaunsa rule pehle aata hai aur uski value apply hogi. 
 4) Methods to add CSS - inline, internal, external
 5) Inline css using style attribute
 # create alot of confusion - not a good practise to use
