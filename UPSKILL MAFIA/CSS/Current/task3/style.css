@@ -1,0 +1,31 @@
+*{
+    box-sizing:content-box ; /*Default Settings*/
+    padding: 0;
+    margin: 0; /*No zoom movement because of margin as it is made consistent*/
+}
+
+.image{
+    margin-top: 10vh; /*Margin according to task*/
+    margin-bottom: 10%;
+    margin-left: 25%; 
+    margin-right: 25%; 
+    line-height: 0; /*Removes Space*/
+    position: fixed; /*Stops from scrolling*/
+}
+
+img{
+    width: 100%;   /*Stops from zooming */
+}
+
+button{
+    background: linear-gradient(135deg, #ad8610, #1e90ff);/*Button Styling */
+    color: white;
+    font-size: 3vw;
+    cursor: pointer;
+    padding: 2vh 19.7vw;/*Sets the button settings acc to image*/
+    border: none; /*Border zooms in and out so no need*/
+}
+
+button:hover {
+    background: linear-gradient(135deg, #690808, #00bfff); /*Button hover*/
+}
