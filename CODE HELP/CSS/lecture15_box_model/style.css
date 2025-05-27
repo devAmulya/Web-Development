@@ -68,4 +68,11 @@ irrespective of space.This box can have : content(width X height), Padding, Bord
 5) Margin - margin 1 value or value like (top,right,bottom,left) or individually margin-top
 6) Universal Selector - apply properties on all 
 # good practise - margin, padding = 0 
+7) Box-sizing - total element width/height 
+if content box - doesnot include padding and border
+border box - include padding and border
+Box-sizing : border-box(default - content box) a good practise because 
+total size stays consistent
+
+
  */
