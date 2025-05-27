@@ -1,0 +1,12 @@
+/* Todays Learning : 
+1) Fonts and their properties(ex: font-size)
+2) font style, size, family(topgraphy or calligraphy), weight(changes darkness/thickness),
+# line-height - height of a line and can be used to increase space btw line
+# fallback system - gives multiple font-family so that if one fails, the next one works
+# external font family by linking it using <link>
+3) Size should be in pixcel[physical px(1px = 1/96 inch =  0.26mm) and digital px]
+4) Colors: named color, rgb value and rgba value(alpha gives transparency value 0.0-1.0)
+,hexadecimal value(#ffffff - white) can inlcude alpha(first 2 red, then 2 blue, then 2 green and if needed then 2 alpha)
+,HSL(Hue- gives color, Saturation-mean intensity,Lightness) lightness and saturation in % also has alpha
+5) Developer tools : inspect on browser
+ */
