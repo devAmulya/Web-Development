@@ -70,7 +70,7 @@ irrespective of space.This box can have : content(width X height), Padding, Bord
 # good practise - margin, padding = 0 
 7) Box-sizing - total element width/height 
 if content box - doesnot include padding and border
-border box - include padding and border
+border box - include padding and border in height and width
 Box-sizing : border-box(default - content box) a good practise because 
 total size stays consistent
 
