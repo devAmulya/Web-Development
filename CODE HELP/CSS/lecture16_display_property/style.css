@@ -1,0 +1,17 @@
+div{
+    border: 1px solid red;
+    width: 300px;
+    height: 200px;
+    margin: 25px;
+    padding: 50px;
+}
+
+
+
+
+
+/* Todays learning : 
+1) Display Properties : How to display elements
+# Block elements(div,p,h1,etc) -  comes in new line, width extreme left to extreme right
+, custom width & height is respected, 
+2) display : block */
