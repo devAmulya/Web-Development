@@ -4,6 +4,25 @@ div{
     height: 200px;
     margin: 25px;
     padding: 50px;
+    display: inline;
+}
+
+/* span{
+    border: 2px solid;
+    width: 800px;
+    height: 200px;
+    margin: 10px;
+    padding: 15px;
+    display: block;
+} */
+
+span{
+    border: 2px solid;
+    width: 250px;
+    height: 200px;
+    margin: 10px;
+    padding: 15px;
+    display: inline-block;
 }
 
 
@@ -12,6 +31,14 @@ div{
 
 /* Todays learning : 
 1) Display Properties : How to display elements
+2) display : block 
 # Block elements(div,p,h1,etc) -  comes in new line, width extreme left to extreme right
-, custom width & height is respected, 
-2) display : block */
+, custom width & height is respected, custom margin and padding respected
+3) display: inline
+# inline elements(span,img,etc) - tries to be in same line(if width is available), 
+width - content wise, custom width and height not applicable
+, margin - only horizontal and padding for all 4
+4) Conversion - using display tag for both
+5) COmbination of both - display-inline block
+behaves like inline, but custom margin and padding 
+*/
