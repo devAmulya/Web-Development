@@ -31,7 +31,7 @@ img{
 3) relative - positioning ,using (top, right, etc) space property, relative to current window/device
 # gap is maintained
 4) absolute - For overlapping
-absolute positioning using space property relative to parent class
+absolute positioning using space property relative to parent class(till relative element found or html)
 # gap is not maintained - element space is removed
 5) fixed - element remain intact to its position in windows even if scrolls up/down 
 irrespective of its parent container(entire web page)
@@ -40,4 +40,7 @@ space property can be used
  till its present container
  space property can be used
 7) Good practise - keep parent container relative
+8) z-index : defines konsa upr ayega ek element
+jyada z, towards user(upr) , lesser z towards screen(niche)
+in css, usually child covers(above) the parents class
  */
