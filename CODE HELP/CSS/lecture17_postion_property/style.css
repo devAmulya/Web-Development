@@ -1,11 +1,40 @@
+img{
+    margin-left: 10px;
+}
 
+.container{
+    border: 1px solid black;
+    position: relative;
+    height: 8000px;
+}
 
+.image2{
+    position: relative;
+    /* position: absolute;
+    top: 100px;
+    left: 200px; */
+}
 
+.image3{
+    position: sticky;
+    top: 100px;
+}
+
+.image4{
+    position: fixed;
+}
 
 
 /* TOdays Learning : 
 1) Position Property: defines how to position an element
-2) 
-3)
-4)
+2) static(default) - No top, right , bottom , left property and no z index applied
+3) relative - positioning ,using (top, right, etc) space property, relative to current window/device
+# gap is maintained
+4) absolute - For overlapping
+absolute positioning using space property relative to parent class
+# gap is not maintained - element space is removed
+5) fixed - element remain intact to its position in windows even if scrolls up/down 
+irrespective of its parent container(entire web page)
+6) sticky - element remain intact to its positon in windows even if scrolls up/down
+ till its present container
  */
