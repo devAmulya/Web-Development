@@ -35,6 +35,9 @@ absolute positioning using space property relative to parent class
 # gap is not maintained - element space is removed
 5) fixed - element remain intact to its position in windows even if scrolls up/down 
 irrespective of its parent container(entire web page)
+space property can be used
 6) sticky - element remain intact to its positon in windows even if scrolls up/down
  till its present container
+ space property can be used
+7) Good practise - keep parent container relative
  */
