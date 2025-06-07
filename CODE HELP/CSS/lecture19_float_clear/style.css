@@ -2,3 +2,15 @@
     margin: 0;
     padding: 0;
 }
+
+.p1{
+    width: 500px;
+    border: 1px red solid;
+    display: inline-block;
+}
+
+.p2{
+    width: 500px;
+    border: 1px red solid;
+    display: inline-block;
+}
