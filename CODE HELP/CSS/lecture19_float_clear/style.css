@@ -3,3 +3,19 @@
     padding: 0;
 }
 
+#img1{
+    float:right;
+    height: 250px;
+}
+#img2{
+    float: right;
+    height: 250px;
+    clear: right;
+}
+
+/* Todays Learning : 
+1) Float - let us set the area where it need to be floated.
+2) only interferes with its current area needed(whether current or nnext block area)
+3) clear - moves down the element(if two has float then 1 up and second down)
+4) overflow hidden,visiible , scroll, auto
+5) dont use for main layout - small utiliztion only */
