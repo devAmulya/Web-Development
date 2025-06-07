@@ -1,16 +1,68 @@
+.container{
+    background-color: beige;
+    border: 5px solid black;
+    margin: 2px;
+    padding: 2px;
+    height: 500px;
+    display: flex;
+    flex-direction:row;
+    /* flex-wrap: wrap; */
+    justify-content:start;
+    align-items:start;
+    align-content: center;
 
+}
 
+.box{
+    /* height: 200px;
+    width: 200px; */
+    border: 2px solid brown;
+    margin: 2px;
+    padding: 2px;
+}
 
+#box1{
+    background-color: aqua;
+    /* order: 500; */
+    /* flex-shrink: 4; */
+    /* flex-grow: 5; */
+    align-self:end;
+}
+
+#box2{
+    background-color: blue;
+    /* flex-grow: 1; */
+}
+
+#box3{
+    background-color: orange;
+    /* flex-grow: 1; */
+}
+
+#box4{
+    background-color: brown;
+    /* order: -1; */
+    /* flex-grow: 1; */
+    /* flex-basis: 500px; */
+}
 
 
 /* Todays Learning : 
 1) Layout - positioning of different component in a way
 2) Flexbox - 1-D Layout Method
-3) FLEX CONTAINER - flex item, main axis(x axis) and cross axis(y axis)
+3) FLEX CONTAINER - flex item,( main axis(x axis) and cross axis(y axis) for row and vice versa for columns) 
 4) display : flex to make container into flex container
-5) 
-6) 
-7) 
-8) 
-9) 
-10)  */
+5) default flex direction - row , use flex-direction to change(row, row-reverse, col, col-reverse)
+6) flex-wrap - wrap text according to size and prevents sequishing(default - no wrap, wrap, wrap-reverse) 
+7) Shorthand notation - flex-flow
+8) Justify-content : places items according to main axis - start, end, center, space-between , space-around, space-evenly
+9) align-item: places items accoding to cross axis - flex-start, flex-end, center, stretch(stretches item for cross axis if height not given - default )
+10) align-content: reduces Gap between wrap elements(since place at start and end) 
+11) Property on flex items
+12) order property : changes sequence of flex items
+13) flex-shrink: how rapid an item shrink
+14) flex-grow: how rapid an item grows(if applied, all space is taken by how rapidly item grow)
+15) flex-basis: used to set dimensions
+16) Shorthand notation : flex grow, flex shrink, flex-basis
+17) align-self: across cross axis, aligns an item
+ */
