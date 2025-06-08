@@ -24,15 +24,15 @@ img{
 
 .inner{
     width: 50vw;
-    height: 100vh;
+    height: 60vh;
     margin: 0;
     position: relative;
-    top: 65%;
+    top: 45%;
     transform: translateY(-50%);
     display: flex;
     flex-direction: column;
     justify-items: center;
-    align-items: center;
+    align-content: center;
 }
 
 input{
@@ -77,6 +77,11 @@ input[type="submit"]:hover{
 .forgot{
     margin: 4px;
     text-align: right;
+}
+
+footer{
+    text-align: center;
+    font-size: 1.3em;
 }
 
 
