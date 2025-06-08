@@ -57,7 +57,7 @@
 7) Shorthand notation - flex-flow
 8) Justify-content : places items according to main axis - start, end, center, space-between , space-around, space-evenly
 9) align-item: places items accoding to cross axis - flex-start, flex-end, center, stretch(stretches item for cross axis if height not given - default )
-10) align-content: reduces Gap between wrap elements(since place at start and end) 
+10) align-content: reduces Gap between wrap elements(since place at start and end)  start,end,center,space-between
 11) Property on flex items
 12) order property : changes sequence of flex items
 13) flex-shrink: how rapid an item shrink
