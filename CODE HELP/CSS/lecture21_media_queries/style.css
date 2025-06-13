@@ -56,7 +56,7 @@
     }
 } */
 
-.container{
+/* .container{
     border: 1px solid black;
     background-color: bisque;
     display: flex;
@@ -94,16 +94,41 @@ p{
     .container{
         flex-direction: column;
     }
+} */
+
+.container{
+    padding: 40px;
+}
+
+h1{
+    text-align: center;
+    background-color:var(--my-var,green);
+}
+
+.box{
+    --my-var: red;
+    padding: 20px;
+    /* background-color:var(--my-var); */
+}
+
+.box h2{
+    margin-bottom: 20px;
+    background-color:var(--my-var);
 }
 
 
 /* Todays Learning : 
 1) Responsive desgin - When our site is made differently suited/rendered for various display size
 2) Syntax
-3) min-width, max-width like if-else 
+3) min-width, max-width or width <=  like if-else 
 4) (one condition) and (second condition)
 5) apply of media query with flex
-6) 
-7) 
-8) 
+6) orientation : portrait , landscape
+7) media type - screen, print, alt
+8) Variables : used to define an attribute
+9) Defined :  --varname ex --my-var: red;
+10) Has scope of variable according to where it is defined
+11) fallback - if var not found , alternative color
+12) override of variable is possible
+13) global variable - root variable
 */
