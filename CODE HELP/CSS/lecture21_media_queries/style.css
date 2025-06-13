@@ -1,12 +1,23 @@
+.box{
+    height: 400px;
+    width: 400px;
+    background-color: aqua;
+    border: 3px solid black;
+}
 
+@media (min-width: 300px) and (max-width: 500px){
+    .box{
+        background-color: green;
+    }
+}
 
 
 
 /* Todays Learning : 
 1) Responsive desgin - When our site is made differently suited/rendered for various display size
-2) 
-3) 
-4) 
+2) Syntax
+3) min-width, max-width like if-else 
+4) (one condition) and (second condition)
 5) 
 6) 
 7) 
