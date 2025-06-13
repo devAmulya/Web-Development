@@ -128,7 +128,7 @@ h1{
 8) Variables : used to define an attribute
 9) Defined :  --varname ex --my-var: red;
 10) Has scope of variable according to where it is defined
-11) fallback - if var not found , alternative color
+11) fallback - if var not found , alternative value
 12) override of variable is possible
 13) global variable - root variable
 */
