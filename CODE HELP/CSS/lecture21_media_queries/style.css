@@ -1,4 +1,4 @@
-.box{
+/* .box{
     height: 400px;
     width: 400px;
     background-color: aqua;
@@ -9,7 +9,55 @@
     .box{
         background-color: green;
     }
+} */
+
+/* .container{
+    background-color: beige;
+    border: 5px solid black;
+    margin: 2px;
+    padding: 2px;
+    display: flex;
+
 }
+
+.box{
+    height: 200px;
+    width: 200px;
+    border: 2px solid brown;
+    margin: 2px;
+    padding: 2px;
+}
+
+#box1{
+    background-color: aqua;
+}
+
+#box2{
+    background-color: blue;
+}
+
+#box3{
+    background-color: orange;
+}
+
+#box4{
+    background-color: brown;
+}
+
+@media (min-width: 640px){
+    .container{
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 640px){
+    .container{
+        flex-direction: column;
+    }
+} */
+
+
+
 
 
 
@@ -18,7 +66,7 @@
 2) Syntax
 3) min-width, max-width like if-else 
 4) (one condition) and (second condition)
-5) 
+5) apply of media query with flex
 6) 
 7) 
 8) 
