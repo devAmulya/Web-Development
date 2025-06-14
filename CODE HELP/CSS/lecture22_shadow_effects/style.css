@@ -1,4 +1,30 @@
+.container{
+    background-color: beige;
+    height: 650px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
 
+.box{   
+    background-color: aquamarine;
+    width: 330px;
+    height: 330px;
+    border: 1px solid brown;
+    margin: 5px;
+    padding: 5px;
+    --hi: red;
+    /* box-shadow: -10px 15px brown; */
+    /* box-shadow: 10px 15px 50px brown; */
+    /* box-shadow: 10px 15px 5px 80px brown; */
+    /* box-shadow: inset 10px 15px; */
+    box-shadow: 10px 15px var(--hi), 15px 12px green;
+}
+
+#head1{
+    text-shadow: 2px 3px 2px white;
+}
 
 
 
@@ -6,8 +32,9 @@
 /* Todays learning : 
 1) Shadow - box shadow and text shadow
 2) box-shadow: x-offset y-offset blur-radius spread-radius color;
-3) -ve offset reverse direction of shadow
+3) -ve offset reverse direction of shadow offset
+offset means how much drifted will be the shadow since it overlay 100% at 0
 4) inset - shadow inside box, multiple shadow with ',' separated
-5)
+5) Text-shadow is similar to box-shadow but applies to text.
 6)
  */
