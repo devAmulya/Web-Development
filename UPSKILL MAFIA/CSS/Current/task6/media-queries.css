@@ -1,9 +1,51 @@
 @media screen and (max-width: 768px){
     li{
-        font-size: ;
+        font-size: 14px;
+    }
+    #logo{
+        height: 12vh;
+    }
+    .fp{
+        margin: 65px 20px 0px 30px;
+        padding: 0px 40px 0px 40px;
+        font-size: 50px;
+    }
+
+    .sp{
+        padding: 0px 60px 0px 40px;
+        font-size: 16px;
+        
+    }
+    .bp{
+        padding: 0px 60px 0px 40px;
+    }
+    .img2{
+        margin-top: 20vh;
+        height: 40vh;
+        width: 28vw;
     }
 }
 
 @media screen and (max-width: 375px) {
-    
+    .nav-inside{
+        display: none;
+    }
+    #logo{
+        width: 20vw;
+        height: 10vh;
+    }
+    .hero{
+        flex-direction: column;
+    }
+    .left{
+        width: 100vw;
+    }
+    .right{
+        width: 100vw;
+    }
+    .img2{
+        margin: 0px;
+        height: 50vh;
+        width: 100vw;
+    }
 }
