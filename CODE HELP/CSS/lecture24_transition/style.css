@@ -1,0 +1,42 @@
+.box{
+    height: 400px;
+    width: 400px;
+    background-color: beige;
+    border: 2px solid black;
+    /* transition-property: width; */
+    transition-property: all;
+    transition-duration: 4s;
+    transition-delay: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+.box:hover{
+    width: 800px;
+    background-color: blue;
+}
+
+/* 
+button{
+    width: 400px;
+    height: 400px;
+    border: 2px solid black;
+}
+
+button:hover{
+    width: 400px;
+    background-color: blue;
+}
+
+button:active{
+    width:360px;
+    background-color: beige;
+} */
+
+
+/* Todays Learning : 
+1)Transition - one state to another
+2) animation is a set of transitio(multiple complex movement)
+3) Ex: Going from A to B , without path (transition), shown with path followed(animations)
+4) Define state using pseudoclass when transition is applied
+5) Has property similar to animations
+6) ShortHand notation and multiple properties transition(,) */
