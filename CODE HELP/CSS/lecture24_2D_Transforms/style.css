@@ -1,0 +1,50 @@
+.box{
+    width: 400px;
+    height: 400px;
+    background-color: beige;
+    border: 2px solid black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: auto;
+
+    transition: all 3s linear 1s;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.box:hover{
+    /* transform: rotate(-360deg);
+    transform: scale(2); */
+
+
+    /* transform: scale(0.5);
+    transform: rotate(-45deg); */
+
+    /* transform: skew(-45deg); 
+    transform: translate(500px, 500px);*/
+
+    transform: matrix(1,0.3,0,1,20,30);
+}
+
+p{
+    font-size: 36px;
+}
+
+
+
+/* Todays Learning : 
+1) 2D Tranfrom in CSS
+2) Any 2D changes of an elemet
+3) Transform - rotate, (skew,scale,translate with individual X and Y property) etc
+4) Transition can be used for transform or any other property change
+5) animation is complex transition/trannsform
+6) matrix combines these six : matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY())*/
