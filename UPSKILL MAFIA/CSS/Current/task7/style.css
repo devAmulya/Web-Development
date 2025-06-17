@@ -96,3 +96,23 @@ li:hover {
 background-color: #04AA6D;
 color: white;
 }
+
+.menu{
+    display: none;
+}
+
+.menu-items{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80vw;
+    height: 100vh;
+    text-align: center;
+    display: none;
+    background-color: black;
+}
+
+.menu-items li{
+    font-size: 25px;
+    margin: 10px;
+}

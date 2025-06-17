@@ -38,6 +38,14 @@
     .nav-inside{
         display: none;
     }
+    .Username{ 
+       display: flex;
+       width: 35vw;
+       justify-content: space-between;
+    }
+    .un li{
+        font-size: 20px;
+    }
     #logo{
         width: 20vw;
         height: 9vh;
@@ -67,5 +75,13 @@
         margin: 0px;
         height: 46vh;
         width: 100vw;
+    }
+    .menu{
+        display: inline;
+    }
+    .menu-button:focus + .menu-items {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
 }
