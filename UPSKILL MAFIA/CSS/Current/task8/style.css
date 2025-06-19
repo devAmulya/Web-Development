@@ -64,7 +64,7 @@ li:hover {
 }
 
 .fp{
-    margin: 65px 20px 0px 20px;
+    margin: 15px 20px 0px 20px;
     padding: 0px 40px 0px 120px;
     font-size: 70px;
 }
@@ -78,23 +78,26 @@ li:hover {
 
 .bp{
     margin: 20px 20px 0px 30px;
-    padding: 0px 60px 0px 120px;
+    padding: 18px 60px 18px 120px;
 }
 
 .button {
     border: none;
     color: white;
     background-color: rgb(55, 55, 224);
-    padding: 15px 32px;
+    padding: 15px 20px;
     text-align: center;
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
+    border-radius: 10px;
+    transition: transform 1s linear;
 }
 
 .button:hover {
-background-color: #04AA6D;
-color: white;
+    background-color: #04AA6D;
+    color: white;
+    transform: scale(1.1) rotate(-10deg);
 }
 
 .menu{
