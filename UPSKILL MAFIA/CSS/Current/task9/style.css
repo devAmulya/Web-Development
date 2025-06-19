@@ -56,11 +56,28 @@ li:hover {
 
 .right{
     width: 30vw;
+    height: 90vh;
+    transform: translate(-50%, -50%);
+    animation: rotateOrbit 3s linear infinite;
 }
 
 .img2{
     height: 70vh;
     width: 28vw;
+    border-radius: 50%;
+    animation: squeezeStretch 2s ease-in-out infinite;
+}
+
+ @keyframes rotateOrbit {
+    0%   { transform: rotate(0deg) translateX(30px) rotate(0deg); }
+    100% { transform: rotate(360deg) translateX(30px) rotate(-360deg); }
+}
+
+@keyframes squeezeStretch {
+    0%, 100% { transform: scale(1, 1); }
+    25%      { transform: scale(1.1, 0.9); }
+    50%      { transform: scale(0.9, 1.05); }
+    75%      { transform: scale(1.05, 0.95); }
 }
 
 .fp{
