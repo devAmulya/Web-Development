@@ -22,23 +22,4 @@
     height: 500px;
     background-color: white;
     border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    padding: 20px;
 }
-
-.card img{
-    height: 57%;
-    border-radius: 10px;
-}
-
-.card h2{
-    font-weight: bold;
-    font-size: 1.5rem;
-}
-
-.card p{
-    font-size: 1.2rem;
-}
-
