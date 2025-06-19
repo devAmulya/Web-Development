@@ -1,0 +1,87 @@
+@media screen and (max-width: 768px){
+    li{
+        font-size: 14px;
+    }
+    #logo{
+        height: 8vh;
+        width: 12vw;
+        top: 2vh;
+    }
+    .left{
+        width: 55vw;
+    }
+    .right{
+        width: 45vw;
+    }
+    .fp{
+        margin: 65px 20px 0px 30px;
+        padding: 0px 10px 0px 40px;
+        font-size: 50px;
+    }
+
+    .sp{
+        padding: 0px 10px 0px 40px;
+        font-size: 16px;
+        
+    }
+    .bp{
+        padding: 0px 10px 0px 40px;
+    }
+    .img2{
+        margin-top: 3vh;
+        height: 50vh;
+        width: 42vw;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .nav-inside{
+        display: none;
+    }
+    .Username{ 
+       display: flex;
+       width: 35vw;
+       justify-content: space-between;
+    }
+    .un li{
+        font-size: 20px;
+    }
+    #logo{
+        width: 20vw;
+        height: 9vh;
+        top: 3.3vh;
+        width: 20vw;
+    }
+    .hero{
+        flex-direction: column;
+    }
+    .left{
+        width: 100vw;
+    }
+    .right{
+        width: 100vw;
+    }
+    .fp{
+        margin-top: 10px;
+        font-size: 30px;
+    }
+    .sp{
+        font-size: 10px;
+    }
+    .button{
+        font-size: 10px;
+    }
+    .img2{
+        margin: 0px;
+        height: 46vh;
+        width: 100vw;
+    }
+    .menu{
+        display: inline;
+    }
+    .menu-button:focus + .menu-items {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+}
