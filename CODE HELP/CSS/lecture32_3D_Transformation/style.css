@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    body{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Todays Learning : 
+1) 3D Transform - include x, y and z 
+2) Translate, Scale and rotate*/
