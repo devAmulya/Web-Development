@@ -76,6 +76,6 @@ body{
 16) place-self: align-self + justify-self
 17) justify-items - container property(applies on all items of container)
 18) align-items: apply vertical property on all elements
-19) 
+19) place-items: justify-items + align-items
 20) 
  */
