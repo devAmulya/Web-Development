@@ -4,14 +4,78 @@
     box-sizing: border-box;
 }
 
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    padding: 4rem;
+    background-color: rgb(59,57,57);
+    display: grid;
+    /* row-gap: 1rem;
+    column-gap: 1rem; */
+    /* grid-template-rows: 1fr 1fr; */
+    /* grid-template-rows: repeat(4,1fr);
+    grid-template-columns: repeat(3,1fr); */
+    /* grid-template-columns: 100px 100px 100px; */
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(6,1fr);
+}
+
+.item{
+    background-color: rgb(94,94,194);
+    border: 5px solid black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.3rem;
+}
+
+@media(min-width: 768px){
+    .container{
+        grid-template-rows: repeat(4,1fr);
+        grid-template-columns: repeat(3,1fr);
+    }
+    .header , .Footer{
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+
+    .sidebar{
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
+
+    .content1{
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+}
+
+
 /* Todays Learning : 
 1) Grid - used for layout 
 2) Divided into rows and columns into cells
 3) gap btw two columns or rows is called track
 4) parent container - display: grid + child items
-5) 
-6) 
-7) 
-8) 
-9) 
-10)  */
+5) row-gap & column-gap : gives gap between row and columns
+6) grid-template-row & gird-template-colums gives no of rows and columns with dimensions.
+7) Cells are filled going from left to right then top to bottom
+8) Fraction unit(fr) - used to divide total length into fraction(unit value = total length / total fr)
+9) repeat - can be used to enter same values for multiple in grid(repeat(2,1fr))
+10) Default - display block grid and inline grid to study
+11) span across line through applying grid-column-start and grid-column-end providing lines
+12) same for rows
+13) 
+14) 
+15) 
+16) 
+17) 
+18) 
+19) 
+20) 
+ */
