@@ -70,12 +70,12 @@ body{
 10) Default - display block grid and inline grid to study
 11) span across line through applying grid-column-start and grid-column-end providing lines
 12) same for rows
-13) 
-14) 
-15) 
-16) 
-17) 
-18) 
+13) grid-row: and grid-column: shorthand notation for 11th
+14) justify-self : applied on grid item(default - stretch) - Horizontal axis
+15) align-self: vertical axis
+16) place-self: align-self + justify-self
+17) justify-items - container property(applies on all items of container)
+18) align-items: apply vertical property on all elements
 19) 
 20) 
  */
