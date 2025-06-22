@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thala 7 – AirFlex Runner</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar (reuse) -->
+  <header class="navbar container flex space-between">
+    <div class="logo">Thala 7</div>
+    <ul class="flex">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="actions flex">
+      <button class="icon-btn" aria-label="search">🔍</button>
+      <a href="cart.html" class="icon-btn" aria-label="cart">🛒</a>
+      <img class="profile-img" src="https://randomuser.me/api/portraits/men/75.jpg" alt="profile photo">
+    </div>
+  </header>
+
+  <!-- Main product display -->
+  <section class="product-main container">
+    <div>
+      <img src="./images/main.avif?auto=format&fit=crop&w=1000&q=80" alt="AirFlex Runner in red">
+    </div>
+    <div class="product-info">
+      <h2>AirFlex Runner</h2>
+      <p>The ultimate hybrid sneaker built with responsive foam cushioning and a breathable knit upper so you can hustle all day long.</p>
+      <div class="price">₹8,499 <small style="text-decoration:line-through;color:#777;font-size:0.9rem;">₹9,999</small></div>
+      <div class="quantity-selector">
+        <label for="qty">Qty:</label>
+        <input type="number" id="qty" value="1" min="1">
+      </div>
+      <button class="btn" onclick="location.href='cart.html'">Add to Cart</button>
+    </div>
+  </section>
+
+  <!-- Bottom gallery -->
+  <section class="container">
+    <div class="gallery-scroll">
+      <img src="./images/front.avif" style="width: 300px; height: 300px; object-fit: cover;" alt="Gallery 1">
+      <img src="./images/left.avif" style="width: 300px; height: 300px; object-fit: cover;" alt="Gallery 2">
+      <img src="./images/clear.avif" style="width: 300px; height: 300px; object-fit: cover;" alt="Gallery 3">
+      <img src="./images/bottom.avif" style="width: 300px; height: 300px; object-fit: cover;" alt="Gallery 4">
+    </div>
+  </section>
+</body>
+</html>
