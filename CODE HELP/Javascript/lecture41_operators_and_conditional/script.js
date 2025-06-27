@@ -28,5 +28,47 @@ console.log('10' == 10); //Loose Equality
 console.log('10' === 10); //Strict Equality
 
 // Ternary Operator
-let age = 15;
+let age = 25;
 console.log(age > 18 ? "Vote" : "Cannot Vote" )
+
+// Conditional Statement 
+
+if(age > 18){
+    console.log('Vote');
+}
+else{
+    console.log('Cannot Vote');
+}
+let number = 5;
+if(number == 1){
+    console.log('A');
+}
+else if(number == 2){
+    console.log('B');
+}
+else if(number == 3){
+    console.log('C');
+    if(age>18){
+        console.log('Vote')
+    }
+    else{
+        console.log('Cannot Vote')
+    }
+}
+else{
+    console.log('Not a ABC');
+}
+
+let num = 3;
+switch(num){
+    case 1: console.log('A');
+    break;
+    case 2: console.log('B');
+    break;
+    case 3: console.log('C');
+    break;
+    case 4: console.log('D');
+    break;
+    default: console.log('F');
+    break;    
+}
