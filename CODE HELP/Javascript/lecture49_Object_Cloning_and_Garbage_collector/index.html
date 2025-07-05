@@ -7,16 +7,22 @@
 </head>
 <body>
     <ol>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li>Js Object is dynamic because we can change its property at runtime</li>
+        <li>Object Cloning : directly equating only marks its reference to same object(reference type) </li>
+        <li>We need to create it differently for cloning : three methods</li>
+        <li>(a) spread operator - ... Ex: let dest = {...src}; </li>
+        <li>(b) assign method : let dest = object.assign({},src)</li>
+        <li>We can clone multiple objects into one object by mentioning extra src</li>
+        <li>(c) Through iteration(not recommended)</li>
+        <li>Diff btw [] access of obj and '.' access of obj</li>
+        <li>'.' literally uses given name as key while you can pass a variable holding key/value in [] </li>
+        <li>For deep copy(creates new nested objects), use : 
+            (i) let dest = structuredClone(src); (ii) let clone = cloneDeep(src);(used library 'lofash/cloneDeep')
+        </li>
+        <li>Garbage Collector : C/C++ has manual, while Java/JavaScript has automatic garbage organisation(used garbage collector)</li>
+        <li>It frees memory occupied using 'new' keyword preventing memory leaks</li>
+        <li>Works automatically and alltime in background</li>
     </ol>
+    <script src="script.js"></script>
 </body>
 </html>
