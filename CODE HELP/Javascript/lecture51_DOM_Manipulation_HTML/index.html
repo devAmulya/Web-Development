@@ -6,19 +6,64 @@
     <title>DOM Manipulation - changing HTML</title>
 </head>
 <body>
+    <!-- <p id = "fpara" class="textMatter">First Paragraph</p>
+    <p id = "spara" class="textMatter">Second Paragraph</p>    
+    <h1 id="fheading" class="textMatter">First Heading</h1> 
+    <button>HI</button> -->
+
+    <!-- <div id = "fdiv">
+        <p>
+            This is my first
+            <span>
+                Text
+            </span>
+        </p>
+        <p>
+            This is my Second para.
+        </p>
+    </div> -->
+
+    <div style="padding: 1rem; margin: 1rem; background-color: yellow;">
+        Hello World
+        <div id="mydiv" style="background-color: grey; padding: 3rem;">
+            <p id="fpara">First</p>
+            <h1>Second</h1>
+            <p>Third</p>
+        </div>
+
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
 
 <!-- Todays Learning : 
-1) 
-2) 
-3) 
-4) 
-5) 
-6) 
-7) 
-8) 
-9) 
-10)
-11)  -->
+1) Window object : a visible browser tab, global object (highest in hereirarchy)
+2) => created by browser , global variable - property of window, global method - behaviour of window object
+3) WIndow object includes everything(DOM, BOM, JS Core)
+# Ex code : window.open(), window.close(), window.console.log("..");
+3) DOM(Document Object Model) : Process in Which we convert HTML code into Js object(called document).
+4) Ex Code : document - (tells which document are present in webpage)
+5) tokeniser : Convert tags into tokens. converted to node , then finally converted to DOM
+6) characters -> tags -> token -> node -> DOM
+7) BOM(Browser Object Model) : any interaction with browser(except HTML)
+8) Accessing HTML elements : id, className, TagName
+9) document.getElementByID("") : gives object with matching ID
+10) document.getElementByClassName("") : gives object by class name
+11) document.getElementByTagName('') : gives object by tagName
+12) querySelector('') - select any object by giving it with specific character : id('#idName'), class('.classname'), tag('tagname')
+# Gives only first found object, rest are ignored
+13) querySelectorAll('') - select all objects
+14) Update Existing Element : 
+15) innerHTML - get/set inside html part under selected element/object
+16) outerHTML - get/set whole Html part(including targetted tag) of selected object
+17) textContent - shows all html content irrespective of how it rendered on ui(according to how you right)
+18) innerText - shows html content as rendered on UI
+19) ADD Element : 
+20) createElement : creates an element which can be added later
+21) tagname.appendChild(element) : adds an already created element in given tagName
+22) tagName.insertAdjacentElement() : position(beforebegin, afterbegin, beforeend, afterend) and HTML content
+23) Add accoding to position given with respect to tagName(parent container) 
+24) REMOVAL : opposite of append
+25) tagName.removeChild(element) : removes child element of a parent
+26) Selecting a parent element through child element  -->
