@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Performance Improvement : Reflow and Repaint</title>
+</head>
+<body>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!-- Todays Learning : 
+1) Performance : we can check how much does it take to run through performance.now()
+2) It gives timestamp, diff is time performance
+3) Reflow : process of calculating posiion/dimension of element(computationally intensive task)
+4) Repaint : process of displaying content/element pixel by pixel(faster reflow)
+5) Less reflow , less repaint gives better performance
+6) Directly appending to document for multiple time result in multiple reflow and repaint(since it needed to be shown on UI)
+7) But first appending to a new div multiple time, it takes only single reflow and repaint when div is appended on document one time only
+# div editing is off dom(no UI involved)
+8) Document Fragment : light weight doc object .
+# Benefit : addition doesnot do reflow or repaint
+# Better approach than using a div
+
+-->
