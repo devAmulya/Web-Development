@@ -7,20 +7,42 @@
 </head>
 <body>
 
+    <div>
+        <p id="fpara">
+            Hello World
+        </p>
+        <a id="Fanchor" href="https://www.google.com">Click Me</a>
+    </div>
+
+    <div id="wrapper">
+        <p id="fpara">First <span> first span </span> para</p>
+        <p id="spara">Second <span> second span </span> Para</p>
+        <p id="tpara">Third <span> third span </span> Para </p>
+        <p id="fopara">Fourth <span> fourth span </span> Para</p>
+    </div>
 
     <script src="script.js"></script>
 </body>
 </html>
 
 <!-- Todays Learning : 
-1)
-2) 
-3) 
-4) 
-5) 
-6) 
-7) 
-8) 
-9) 
-10) 
- -->
+1) Events : activity or interactions made with website resulting in a certain action
+2) moniterEvents(document) : It lists the events in our console as they occur.
+3) Event-Target : entity where event is received(element/Object of html)
+4) Event-Listener : Defines action on event occuring at event-target
+5) methods to apply : addEventListener() and removeEventListener()
+6) Syntax :  <event-target>.addEventListener(<event-type>,<function=>action>)
+7) Optimal : always write function before and then pass it without bracket(otherwise autocall without event occurs)
+8) Reason : removeListener needs exact same function as addListener and writing even same anonymous function doesnot form same object
+9) Phase of Event : capturing phase(parent->child->target) , At target Phase, Bubbling phase(return from target)
+10) BY default : addEventListener() is applied at Bubbling phase
+# not possible at target phase but possible at capture phase using third parameter = true 
+11) Event Object : # on triggering an event, addEventListener() parameter function gets event as input
+That object passes is called Event Object.
+12) Default behaviour : Ex - Anchor tag taking to another page. It can be changed.
+# event.preventDefault(); - prevents default behaviour , new behaviour can be given in function
+13) Avoiding too many listeners : create single listener function(not in loop aur repetition) for similar works and apply on most appropriate
+# event.target.target-property : can be used to access targetted element details
+14) DOMContentLoaded is a browser event that fires when the HTML is fully loaded and parsed.
+# It’s used to safely run JavaScript or dynamically add scripts after the page’s structure (DOM) is ready.
+-->
