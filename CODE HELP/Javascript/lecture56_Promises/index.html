@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promises</title>
+</head>
+<body>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!-- Todays Learning : 
+1) Promise : object that represents eventual completion(/failure) of an asynchronous op and its resulting value
+2) Three states : Pending, fulfilled, rejected
+3) It allows asynchronous to return promise value like synchronous methods
+4) Syntax : new Promise((resolve,reject) => {})
+5) We passes an arrow anonymous function as paramenter to promise
+6) Default parameters name. Use them to tell state with some value
+7) return/output : resolve : any value Ex: resolve(100)
+8) for : error - reject(new Error("Error Name"))); to throw an error or msg : directly like resolve
+9) return statement doesnot work
+10) Promise auto runs everytime
+11) For Resolve state : promise-name.then(function).catch(function with parameter error)
+12) whatever you give error/mesg becomes input for this function
+13) we can use return statement in promise and use nested then
+14) we can use finally block too 
+15) Promise all
+ -->
