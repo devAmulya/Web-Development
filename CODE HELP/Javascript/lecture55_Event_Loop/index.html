@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Loop</title>
+</head>
+<body>
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!-- Todays Learning : Event Loop
+1) Synchronous Code : executes at same time when flow of execution reaches on line.
+2) Asynchronous Code : may not execute at same time when flow of execution reaches on line. It make them wait .
+3) It uses setTimeOut(function_name, duration) for wait/delay
+4) More Examples : EventListener, network-request, db-request
+# aynchoronous code are handled in a different thread in parallel to that main one
+5) Blocking : if they are not handled in different thread, they will block rest of execution till they are completed.
+6) Event Loop : Call Stack, Browsers , Callback Queue
+# Diagram 
+# asynchornous code - call stack handOver it to Browser if occured during push
+# call stack continue its execution of push then pop
+# After completion of time duration, asynchronous code is sent to Callback Queue
+# Event Loop :  if call stack is empty, callback queue front functions arepassed to Call Stack
+ -->
