@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Task 16</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="username">Hi, Username</div>
+      <div class="login">
+        <div class="login-button">Login</div>
+      </div>
+    </header>
+    <main>
+      <div class="search-area">
+        <input id="search-text" type="text" class="student-input" placeholder="Search Student"/>
+        <div class="search-button">Search</div>
+      </div>
+      <div class="cards container" id="cards-container"></div>
+
+      <!-- Template -->
+      <template id="student-card-template">
+        <div class="card">
+          <div class="card-content">
+            <div class="name">
+              <p>Student Name:</p>
+              <span class="student-name"></span>
+            </div>
+            <div class="marks">
+              <p>Marks:</p>
+              <span class="student-marks"></span>
+            </div>
+            <div class="class">
+              <p>Class:</p>
+              <span class="student-class"></span>
+            </div>
+            <div class="address">
+              <p>Address:</p>
+              <span class="student-address"></span>
+            </div>
+          </div>
+        </div>
+      </template>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
