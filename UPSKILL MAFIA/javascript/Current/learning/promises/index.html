@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promises in JavaScript</title>
+</head>
+<body>
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- Todays Learning :
+1) Promise -  used to handle async operations. Find out if async op is done or not
+2) Three states : Pending , fulfilled , rejected
+3) creating a promise : let promise = new Promise(function(resolve,reject){
+                            // function instructions
+                        })
+4) Passes a (function with resolve,reject as parameter) as a parameter to new Promise object
+5) resolve : done, reject: cannot be done (some error)
+6) These keywords used to return/pass values from a promise
+7) Useful in api calls etc
+8) Pending -> either fullfilled or reject state
+9) Using a promise : three methods 
+10) .then() - used when promise is successfully fulfilled or resolved(catches value from promise as paramter for function passed)
+11) .catch() : used when promise is rejected or error occurs(catches value from promise as paramter for function passed)
+12) .finally() - always execute in any state.
+13) we can use multiple .then when return a async function with promise but if any generates error/reject
+14) It jumps to catch block and then finally
+15) We can also use keyword async , await to make them wait to get result from an async function instead of then
+16) async - make function asynchronous and inside this use await : to wait till its execution/return before proceeding to next line
+17) Need to use try catch for unresolve or error in async function
+ -->
