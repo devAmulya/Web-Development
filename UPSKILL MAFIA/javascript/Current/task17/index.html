@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Service Booking Web App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpqq9O_Pwz8ijYWPCWFiZqwOKL64T1GSettRU3lpeNPg&s" alt="">
+    </div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+    <div class="user-section">
+      <span class="username">Username</span>
+      <button class="logout-btn">Logout</button>
+    </div>
+  </nav>
+
+  <main class="container">
+    <!-- Left Section -->
+    <section class="left-section">
+      <h2>Added Items</h2>
+      <table class="added-items-table">
+        <thead>
+          <tr>
+            <th>S.No</th>
+            <th>Service Name</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody id="added-items-body">
+          <tr class="no-items-row">
+            <td colspan="3" class="no-items-text">No Items Added<br /><small>Add items to the cart from the services bar</small></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="total-amount">
+        Total Amount: <span id="total-amount">₹0</span>
+      </div>
+
+      <form id="booking-form">
+        <h3>Book Now</h3>
+        <input type="text" id="full-name" placeholder="Full Name" required />
+        <input type="email" id="email" placeholder="Email ID" required />
+        <input type="tel" id="phone" placeholder="Phone Number" pattern="[0-9]{10}" required />
+        <button type="submit" id="book-now-btn">Book now</button>
+      </form>
+
+      <p id="booking-message" class="booking-message"></p>
+    </section>
+
+    <!-- Right Section -->
+    <section class="right-section">
+      <h2>Browse Our Services</h2>
+      <p>Click on the add to cart button to add the services to your cart or press skip</p>
+
+      <div id="services-list" class="services-list">
+        <!-- Services will be injected here by JS -->
+      </div>
+
+      <div class="info-text">
+        Add the items to the cart and book now
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
