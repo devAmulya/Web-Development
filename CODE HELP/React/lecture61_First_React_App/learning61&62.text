@@ -1,0 +1,45 @@
+Lecture61 Learning : 
+# Lib : focuses on one thing , framework : catters various at a time
+1) what?(2011, 2013 open source)
+#React is a JS UI Lib (but also has uses like frameworks)
+#Focuses on single page application.lec
+2) why?
+#component based/Modular(reuse)
+#Virtual DOM(lightweight copy)
+#single page application -> dynamic updation
+#state management
+#use props for data transfer
+#hooks - react features
+3) Vite tool - Fast frontend build tool
+4) Do setup by : 
+#npm create vite@latest 
+#cd my-react-app #npm install #npm run dev(will be mentioned)
+5) WIll create various files like : 
+#node_modules: includes all needed file
+#public - assets(static file - not build)
+#src - assets(include font, extra css file etc)
+#src - app and index file are app files(main react files(jsx) with their css files)
+#index.html - main html file
+6) npm run dev -> index.html(div->root : import) -> src -> main.jsx(renders) -> App.jsx(App.css and index.css for style)
+7) jsx - javascript xml - html + js code (strict html with closing tags)
+8) jsx converted to react -> html -> browser
+9) boiler plate code : type rafce + enter
+
+Lecture62 Learning : 
+#JSX(used in react) : stricter HTML - XML like JavaScript syntax
+#Always include closing tag for normal(non void) or void elements and also can use '/' in end of opening tag for void elements.
+#We need to write html code in a single container (empty : <></> or like div)
+since it returns a single container only(error for multiple so put a parent container for multiple)
+#We can write js code inside html by putting inside {}
+1) Components : its like a function, which gives some code like html
+2) Functional based Component and class based Component
+3) in function based, we create a component function returning html code (function needed to be export default)
+4) HTML class in jsx : define using className = '' since class is reserved for js
+5) we need to import any component through writing this in app.jsx <name/>
+6) we need to import any other resource mentionedd in src->assets(imported so its js)
+7) For css, we need to import it in its particular jsx file like import './Name.css'
+8) props : used to send data and access it
+9) these can be written in html(as attributes of component tag to pass data)
+10) receive data by adding parameter in component returning function and use it with '.' to select the attribute
+Ex : if name is passed like uname = "" , use {prop.uname} (js in html)
+We can send css style like that too
