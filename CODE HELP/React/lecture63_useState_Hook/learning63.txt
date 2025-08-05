@@ -1,0 +1,9 @@
+Lecture 63 Learnings: 
+1) Hooks : helps in accessing react functionality
+2) useState hook : 
+3) Every component can maintain any state
+4) Ex: Count in a Counter 
+5) it provides state var(state stored) and state function(changes state)
+6) const [state,setState] = useState(0);
+setCount(count+1) put inside listener function of the event or in whatever way you want to change value
+7) import it from react to use it
