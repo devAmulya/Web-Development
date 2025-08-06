@@ -7,3 +7,13 @@ Lecture 63 Learnings:
 6) const [state,setState] = useState(0);
 setCount(count+1) put inside listener function of the event or in whatever way you want to change value
 7) import it from react to use it
+
+Lecture 64 Learnings : 
+1) Props Children: content inside component : <c>,</c> (non void) is send as children of props 
+use : props.children
+sending data from inside rather than just sending it through attributes
+You can give it as children attribute also but the later one is only used
+2) Higher order component(wrapper) usecase
+3) Passing a function to a components : define first, pass it as attribute with any property name
+receive through props and use '.'
+Use that function directly inside the components
