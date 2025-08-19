@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import './App.css'
 import Card from './components/Card'
+import LoginBtn from './components/LoginBtn'
+import LogoutButton from './components/LogoutButton';
 
 function App() {
 
@@ -17,6 +19,47 @@ function App() {
         <Card title = "Card2" name = {name} setName= {setName}/>
     </div>
   )
+   const[isLoggedIn, setLoggedIn] = useState(true);
+    // if(isLoggedIn){
+    //   return (
+    //     <>
+    //       <LogoutButton />
+    //     </>
+    //   )
+    // }
+    // else{
+    //   return(
+    //     <div>
+    //       <LoginBtn />
+    //     </div>
+    //   )
+    // }
+    // return(
+    //    <div>
+    //     {isLoggedIn ? <LogoutButton /> : <LoginBtn /> }
+    //   </div>
+    // )
+  
+    if(!isLoggedIn){
+      return(
+        <LoginBtn />
+      )
+    }
+  
+    return(
+      <div>
+        <h1>Welcome to website</h1>
+        <div>
+          {isLoggedIn && <LogoutButton />}
+        </div>
+      </div>
+    )
+   
+    // return(
+    //   <div>
+    //     hello
+    //   </div>
+    // )
 }
 
 export default App
