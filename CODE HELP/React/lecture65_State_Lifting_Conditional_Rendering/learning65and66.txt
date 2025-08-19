@@ -1,0 +1,11 @@
+Learning 65 : State uplifting in react
+1) Data transfer: Parent can transfer state to child
+2) But to share state between two child, we use state uplifting
+# send data to parent , then to other child
+3) Create useState in parent and then pass its variable and change function to child as its attribute(props)
+# this will lead in updation of parent state in from child and can be shared to other child (same state as parent)
+
+Lecture 66: Conditional Rendering
+1) Decide on whether or which to render based on flag condition
+2) Can be achieved(4 methods) through : if else, ternary operator, logical operator, early return
+3) logical operator : use of && with false/true condition and component
