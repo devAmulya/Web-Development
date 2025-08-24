@@ -1,0 +1,10 @@
+learning 67 : Event Handling
+1) It is done as simply as js
+2) use event listeners like onclick etc on selected element at a time 
+3) create function for the same
+4) Interview questions : <button onClick={alert("Button clicked")}> This is auto clicked(on rendering page)
+since function was not created but a command was passed , create anonymnous arrow function to prevent this
+5) This is called : Immediate invocation
+6) To stop event bubbling(event occur at button getting event for parent container during bubbling phase)
+7) Use e.stopPropagation(); 
+8) Did Change color project
