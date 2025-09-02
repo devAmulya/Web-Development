@@ -1,0 +1,32 @@
+Lecture 68: 
+1) useEffect : react hook that generates side useEffect
+xyz event occur => side useEffect
+2) using useEffect snippet creates basic structure
+3) it include first , second , third
+4) first -> side effect function
+5) second -> clean up function inside return(after unmount of part of ui)
+6) third -> comma separated dependencies list
+On updation of these thing, side effect function runs
+7) replace this word with this things
+8) variation : 1 -- runs on every render
+without any dependencies or clean up function even mentioned
+## executes after rendering except for alert etc
+9) variation : 2 -- runs on only first render\
+give dependencies as empty(write dependencies [] but empty)
+10) variation : 3 -- runs on a dependencies (atleast runs one if value is given on dependencies variable)
+Ex: runs when button is clicked
+11) variation : 4 -- multiple dependencies
+if even a single dependencies change, effect is rendered
+12) variation : 5 -- with clean up function
+removes prev component
+removing useEffect in code result in re rendering just before removing actually on site resulting in showing clean up function code
+
+#Multiple use of useEffect is possible
+
+## main.jsx lies in <StrictMode> and it renders certain content twice as it specifies app is in development phase
+useEffect
+useState initializers
+constructors
+component render functions (in development)
+
+## since state variable is used in useState it re renders whole ui 
