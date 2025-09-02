@@ -1,0 +1,17 @@
+Lecture 69 : useContext Hook -- 
+1) Prop-drilling : A prop passed from a parent to a deeply nested child (2+ levels) 
+is unnecessarily passed through intermediate child components.
+2) To prevent this practise (bad thing) : we use useContext
+3) useContext include three steps : 
+# create Context - use createContext()
+const UserContext = createContext();
+export {UserContext}
+# provide - wrap all child inside a provider 
+<UserContext.Provider> child </UserContext.Provider>
+Top most level child to be included 
+** Pass value now through provider wrapper
+# consume - use it inside wherever i want to use in a child
+import {UserContext} from '../App
+const user = useContext(UserContext);
+4) created a theme toggle button
+5) we can create multiple context  like nested context
