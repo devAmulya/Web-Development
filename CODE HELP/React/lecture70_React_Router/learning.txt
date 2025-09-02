@@ -1,0 +1,63 @@
+Lecture 70 : react router
+1) Route - Defines a path that directs navigation from one component/page to another.
+2) Install react router dom : npm i react-router-dom
+3) Import those needed router from react-router-dom
+
+(i) Browser router - It includes a array of all routes like {}
+#Each route consist of a path and element/component
+Adding path on original address takes you to that component
+Ex: xyz.com/ , xyz.com/about, xyz.com/about then '/about' is path
+{
+    path: "/",
+    element: <Home/>,
+},
+{
+    path: "/about",
+    element: <About/>
+}
+
+(ii) Provide router to router provider 
+<RouterProvider router = {router} />
+import Router provider from react-router-dom
+
+
+4) Parameter : usePara 
+Used to pass a paramter with a route
+add - ":/id" in path
+anything after / will be considered as id(example)
+You can access it inside the component through useParams()
+(i) route paramter - ':/id'
+(ii) query paramter - '/id = ___', id is key
+
+5) useNavigation hook : to go to another page without reload
+#import it from react-router-dom
+# instialize a const with it 
+inside variable pass path as parameter . Use event handling for buttons 
+
+6) nested routing : 
+we can get nested routing by using children along with path and element
+children take an array of routes as input
+# we need to use <outlet> tag in parent component to tell where to render content
+
+7) when we hit a random url address of our website, it generates a 404 not found error
+react shows a predefined page for the same if route not defined
+# we can use error boundary or errr element which shows a fallback ui if any error arise in whole application
+# or we can create a route with path * and NOT FOUND component as element
+at end of array
+
+
+## / represents the home page route; adding text after / creates a new URL path.\
+
+##we dont use anchor tag in react since it refreshes whole page 
+but react is used to built single page application
+# We use <Link> instead of <a> and to instead of href
+# import link from react-router-dom
+
+## mentioning of component including link outside react router results in internal issue
+# so mention it inside react router where you define path and element
+
+## Navlink is better to use instead of link for nav since it comes with active class
+isActive - automatically detects if link is active(current page and then can be used )
+# we can use this state to aplly style using js by either giving classname or directly apply style
+(conditional styling)
+# isPending - if route is currently loading , apply style
