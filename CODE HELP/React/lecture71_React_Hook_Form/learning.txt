@@ -1,0 +1,29 @@
+lecture71 : React Hook Form -- 
+1) Provides various functionality and has better performance 
+because of lesser rendering (less boiler plate code)
+2) Install package npm i react-hook-form
+3) import react-hook-form packages : useFrom, SubmitHandler
+4) Always import dependencies in current project as they donot share their node modules among them(individual for all)
+5) const {
+    register,
+    handleSubmit,
+    watch,
+    formState: { errors },
+  } = useForm();
+6) To track the field, we need to link input field -- we use "register"
+ <input {...register('firstName')} />
+ data is link with name given in ''
+# we can provide condition/validation for daata submit with ',' separated list inside register
+#giving another array instead of direct value like {value: , message: },
+we can pass a error message (not visible)
+#we can even provide pattern (regular exp)
+7) handleSubmit : use to create a function which handles input "data" on submitting.
+8) formState includes state of form like errors, isSubmitting, isSubmitted etc flags
+erros : we use errors to display error message
+{errors.firstName && <p>{errors.firstName.message}}
+just after input register(for immediate rendering)
+# we can use this error to provide specific type of class to input or etc
+using conditional statement
+9) To prevent from multiple submittion during api call delay(as submit button can be presses again and again)
+we can use disabled in inpyt type submit to prevent this
+It disable submit button
