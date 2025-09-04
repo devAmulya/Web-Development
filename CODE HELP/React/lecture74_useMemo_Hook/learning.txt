@@ -1,0 +1,11 @@
+lecture 74 : useMemo Hook -- 
+1) useMemo : react hook for memoisation
+2) memoisation : if a problem is not solved , solve and store 
+&& if solved, use stored answer(no redoing of task)
+3) useMemo is used to prevent unnecessary expensive operation / task / calculation done repeatedly
+4) Works for only last input value
+5) let var_name = useMemo(() => function_call, [dependencies variable])
+6) import useMemo from react
+7) function_call : expensive task , dependencies : variables that change values
+8) it store(cache) value of last dependent variable result and 
+doesnot recalculate on re rendering until dependent var value change
