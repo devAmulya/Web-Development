@@ -1,0 +1,22 @@
+lecture 65 : useCallback Hook -- 
+1) useCallback : function reference -> cache/memoise/freeze
+2) Two usecases : 
+
+(a) prevent unnecessary re rendering of child components
+=> if state variable is updated, page is re rendered 
+which might be unnecessary for child components
+** wrap child component function inside the 'React.memo'
+=> sending function as props make it fail , i.e,child ui is re rendered
+=> since parent function is recreated and hence child function needed to be re rendered.
+## wrap passing function into useCallback hook like this : 
+const func_name = useCallback(() => {
+    //function work
+  },[dependencies])
+# it takes dependencies on which function is regenerated 
+otherwise function is freezed with initial values taken
+Not regenerated
+
+(b) to prevent expensive component to run again and again
+function recreation is stop (except for dependency)
+useMemo : memoise result/value, stop function rerednering
+useCallback : function reference memoise, function rerenders but not regenerated
