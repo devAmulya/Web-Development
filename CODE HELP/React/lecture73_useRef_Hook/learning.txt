@@ -1,0 +1,13 @@
+lecture73: useRef Hook
+1) useState re renders the whole ui if state variable is updated through set function
+2) There are two usecase where we use useRef : 
+3) (not primary) Condition A : variable which persist value across re-renders(holds value change even after re render)
+4) useRef gives object where we can update value through content
+5) let a = useRef(0) a.current += 1;
+6) It doesnot re render but update internally(if nneeded to be shown in ui, re render is needed)
+7) Condition B : Access any element directly from dom and change/update it
+8) instead of using getElementById ,we access it directly
+# create a ref variable : let btnRef = useRef();
+# Link by giving ref parameter = variable_name : <button ref = btnRef>
+# use current and add parameter to be used : 
+btnRef.current.style.backgroundColor = "red";
