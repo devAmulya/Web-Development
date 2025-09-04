@@ -1,0 +1,30 @@
+lecture72 : React Redux Toolkit
+1) Prop drilling : bad since it follows a hierarchy and if a shift is needed to be made
+, needed to redesign hierarchy tree.
+2) solve : centralized store to keep all states and anyone can access it if needed
+3) Terms : Action, Reducer, Slice, Store, State
+4) React Redux(old) - connect to redux store, current redux toolkit - redux logic
+5) Redux store - js object used as database in memory(here for states)
+6) Any effect originates through trigger
+(i) Action : object which considers event or event + additional info like payload
+wraps data
+(ii) Reducer : function - logic for data change or update
+take old state and action, gives new state
+(iii) slice : logic behind every feature state is stored here
+includes name, initial state, reducer function of that feature
+(iv) store : all state is stored here
+(v) state : data
+7) Process : 
+(i) INSTALLATION : npm install @reduxjs/toolkit react-redux
+(ii) create a store.js which configure store(inside redux folder) and counterSlice.js(inside features folder , can include multiple slice.js) which create slice(state + Reducers + Actions)
+(iii) wrap Provider with store and app.jsx in main.jsx
+# import provider from react-redux and store.js
+(iv) register reducer slice into store.js
+
+8) useSelector is used to get state from store.
+9) useDispatch() hook to dispatch action
+
+10)  createAsyncThunk : Purpose: Handle API calls/async logic.
+# create by givig to export const and a paramter passes(asynchronous function)
+# Handle in slice: use extraReducers for pending, fulfilled, rejected.
+# use through dispatch .
