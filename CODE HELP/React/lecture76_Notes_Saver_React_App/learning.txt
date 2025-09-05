@@ -1,0 +1,13 @@
+Lecture 76 : Paste code/note saving app
+1) Use : React, Local Storage, tailwind, Redux
+2) install dependencies : tailwind, react-router-dom, react-Redux
+3) local storage stores data in form of key-value pair
+
+
+
+
+
+
+
+*******if all lower case, and no special character(except -)/space => vite directly use app name as package name
+and if not , it asked confirmation by making it according to npm rule
