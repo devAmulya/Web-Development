@@ -1,0 +1,15 @@
+Lecture78 Intro To Backend Development, Nodejs and Expressjs
+1) Client Server Architecture : 
+client -> (req) -> sever -> (response) -> client
+2) DNR : Domain Name Resolution provides server address to client address
+3) Front End : face, Backend : Brain/storage
+4) Server machine include backend
+5) Nodejs provide run time environment(server side)
+6) Expressjs is a framework : helps in writing efficient backend application
+7) Steps to create : 
+(i) npm init -y : create package.json file
+(ii) create index.js : backend code 
+(iii) npm install express : express framework to install
+8) RUn : node index.js
+9) allow access on private network only and use 'localhost' for safey
+10) on localhost:Port will show output (of .get function )
