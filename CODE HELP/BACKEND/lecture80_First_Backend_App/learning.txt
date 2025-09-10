@@ -1,0 +1,11 @@
+Lecture 80 : First Backend App(should be seen before lecture 79 as wrongfully arranged)
+1) require - includes something
+require('express') : includes express module
+2) express() - initailize an app using express
+3) create a port value (to tell its address) variable
+Keep different port for every application on a system
+4) start your app or server
+app.listen(port, action)
+port : tells which port app has to listen
+action : to be executed on listening
+5) atleast need one get function for homepage address
