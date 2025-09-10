@@ -1,0 +1,38 @@
+Lecture 79 : Request/Response/Testing/Routing in ExpressJs
+1) We use nodemon so that we dont need to refresh it again and again
+Install :  npm install nodemon
+# add this inside scripts in package.json : 
+"dev" : "nodemon index.js",
+## npm run dev will run the code now
+
+2) to stop running node index.js --> use ctrl + c
+--> it sends SIGINT(interrupt signal) to node
+--> program exit : use process.exit()
+
+3) Requests : 
+(i) get Request - fetch data
+app.get('path',arrow function with req,res)
+(ii) post Request - to save / create new data or entry
+(iii) put Request - update existing data item
+(iv) delete Request - delte existing data item
+
+4) For testing , we use POSTMAN API
+
+5) Routing : 
+There are various methods.
+response methods : 
+# res.send() : sends a string
+# res.sendFile() : send a File(needs a root for handling error)
+# res.json() : send a json file
+
+6) Chaining of events is possible but not recommended
+
+7) Best way to create routing so that it is optimised
+Use express.Router()
+# create a routes folder and inside create a item.js
+# put all route inside it with replacing app. with router.
+and import it in main file using require
+load imported file using app.use('path you define'. import variable name)
+# path changes from localhost:3000/ to localhotst:3000/'path you define'/
+
+we cann organise for various other type
