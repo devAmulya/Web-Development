@@ -1,0 +1,41 @@
+Lecture 81 :
+1) Middleware - a sort of function
+2) Request --> response : req --(middleware)---> res
+3) Use : Pasing, logging, validation, authorisation, etc
+4) Task that can be performed : 
+execute code, make changes to req and rep object, 
+end req-response cycle or call next middleware in stack
+5) InBuilt middlware : 
+## load using : app.use(middleware_name());
+(i) express.json : to parse json 
+(ii) express.urlencoded() : parses url encoded payloads
+(iii) express.static() : serves static files from inside a folder
+
+## req --> logging --> auth --> validation --> res ===> req
+
+6) creating middleware :
+const myLogger = function(req, res, next){
+    console.log('Logged');
+    next()
+}
+:: req - request, response - response , 
+next - any aftwerward middleware, if no --> route handler
+# order is important(and before route handler)
+## every custom middleware is loaded like inbuilt middleware
+app.use(loggingMiddleware);
+# if response is send before, no further middleware or route handler will run
+
+## function inside app.get is called route handler
+
+
+## if used instance of app.object() , application level middleware
+
+Types of middleware : 
+(i) Application level middleware
+(ii) Built-in Middleware
+(iii) Router level Middleware : used with instance of express.route()
+--> like we used in router for path
+(iv) Error Handling Middleware : it takes four argumennt (err extra)
+(v) Third Party Middleware
+# Route specific middleware : defines accessibility of a route
+--> we can provide or load router directly into route btw path and route handler
