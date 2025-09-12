@@ -1,0 +1,10 @@
+Lecture 82 : MongoDB using Mongoose
+1) MongoDB : type of NoSQL database
+--> store in format of document/ dson(json like format)
+2) MongoDB Compass -- graphical user interface(gui tool) used to interact with db 
+3) To setup a mongodb db, you need to create a connection(which includes collection)
+4) MongoDB database includes various collection(like table in sql)
+5) collection is a grouping of MOnngoDB document
+## MongoDB database : connection > database > collection > documents(In sql : server>db>table>content) 
+Compass uses local machine resources (on-premise)
+6) MongoDb Atlas - cloud storage for mongoDB
