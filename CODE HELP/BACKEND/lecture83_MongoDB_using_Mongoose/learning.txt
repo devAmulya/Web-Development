@@ -1,0 +1,56 @@
+Lecture 83 : Connecting MongoDB using Mongoose
+1) Mongoose - library use to connect backend application with database(mongodb)
+promise based object data modelling like library
+2) Schema : blueprint/template, model : utilises schema
+3) USe ::: -
+# create db.js file
+# import mongoose
+# write connnection code : 
+const mongoose = require('mongoose');
+
+const connectDB = async() => {
+    try{
+        const conn = await mongoose.connect(process.env.MONGODB_URI);
+        console.log(`MongoDB Connected`);
+
+    } catch (error) {
+        console.log(error.message);
+        process.exit(1);
+    }
+}
+
+module.exports = connectDB;
+
+# import wherever needed and load afterward
+4) Dont hardcore connection string , use .env file for securing all sensitive and important data
+import dotenv file in system and then in db.js file
+load it using : dotenv.config();
+use it : process.env.NAME_written
+store key in .env with Name_written variable 
+
+
+5) Creating models : 
+const {Schema,model} = require("mongoose");
+
+const MySchema = new Schema({
+    name: {
+        type: String,
+        requiredd: true,
+        maxlength: 50
+    },
+    createdAt: {
+        type: Date,
+        default: Date.now
+    },
+});
+
+## Export : 
+const UserModel = model("user",UserSchema)
+module.exports = UserModel
+
+6) Practise CRUD operation . We did : 
+(i) db.js --> stablise connection
+(ii) userModel.js --> define model of a schema
+(iii) index.js --> home route
+(iv) user.js under route --> created different where crud operations are performed on reaching
+(api are created)
