@@ -1,0 +1,14 @@
+Lecture 84 : MVC Pattern
+1) MVC - Model View Controller, provides SOC(separation of Concern)
+2) Model : method to interact with DB and data logic
+3) View : Frontend/ User Interface
+4) Controller : Buisness logic how things happen or flow 
+Diagram
+5) E commerce cart functionality
+
+
+
+ 
+## adding {new:true} in update command as extra argument provides new data rather than prev data
+
+## You can give your db name by adding name in add of connnection string
